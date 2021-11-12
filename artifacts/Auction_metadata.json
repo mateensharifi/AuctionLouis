@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.10+commit.fc410830"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "prepareAuction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "time",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "minBid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "hasBuyNow",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "buyNow",
+						"type": "uint256"
+					}
+				],
+				"name": "setUpAuction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Auction.sol": "Auction"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Auction.sol": {
+			"keccak256": "0x2409891056a21f6085508cca74d18ba5a496ea6af78ad1599db4a66212659c50",
+			"urls": [
+				"bzz-raw://e0ac16a85ea0109456df0e91de7fe662fba11d83066b63415db451160fce9402",
+				"dweb:/ipfs/QmNpbQdFdvfB8cUaEtQJd6nUzVEyhBgieCS4nseZUfRhSF"
+			]
+		}
+	},
+	"version": 1
+}
