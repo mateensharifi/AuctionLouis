@@ -9,8 +9,8 @@ contract Acount {
         creator = msg.sender;
     }
     
-    function getUsername() public returns string {
-        returns username;
-    }
+    // function getUsername() public return (string) {
+    //     return username;
+    // }
     
 }

@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.8.10+commit.fc410830"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"AuctionHouse.sol": "AuctionHouse"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"AuctionHouse.sol": {
+			"keccak256": "0x96dad14696faa9703f053abea6eb262c59f2a281c001641223be821a8ff918e5",
+			"urls": [
+				"bzz-raw://5cb36f505a152779612ea9a3c2fb079f813eb543c2e5de484239918c880781c4",
+				"dweb:/ipfs/QmR7oG5rV4q8wXZk2QfiEJ5VepchxDVWFqyyWZ5mWXH6nc"
+			]
+		}
+	},
+	"version": 1
+}

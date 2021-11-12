@@ -74,10 +74,10 @@
 	},
 	"sources": {
 		"Auction.sol": {
-			"keccak256": "0x2409891056a21f6085508cca74d18ba5a496ea6af78ad1599db4a66212659c50",
+			"keccak256": "0x71f96c75b1bb143fd0e805ef1f793a643edab760217c2ca6f5937a46d1f1b5b1",
 			"urls": [
-				"bzz-raw://e0ac16a85ea0109456df0e91de7fe662fba11d83066b63415db451160fce9402",
-				"dweb:/ipfs/QmNpbQdFdvfB8cUaEtQJd6nUzVEyhBgieCS4nseZUfRhSF"
+				"bzz-raw://182b2e337a5f107a9cc367b4a57512a07c003cb4f2e78253bdcad1b525e5c0c8",
+				"dweb:/ipfs/Qmb3VFAmQ4mNE3G8mWFnXkt7GnG8nv2MQ5mHPUu6VKxMg6"
 			]
 		}
 	},
