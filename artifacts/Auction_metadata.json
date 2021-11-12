@@ -18,6 +18,13 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "sendNFTToBidder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -74,10 +81,10 @@
 	},
 	"sources": {
 		"Auction.sol": {
-			"keccak256": "0x71f96c75b1bb143fd0e805ef1f793a643edab760217c2ca6f5937a46d1f1b5b1",
+			"keccak256": "0x1bd7f653e674588c58712495e9fa33748156e85719c022a3bf20949b7170a843",
 			"urls": [
-				"bzz-raw://182b2e337a5f107a9cc367b4a57512a07c003cb4f2e78253bdcad1b525e5c0c8",
-				"dweb:/ipfs/Qmb3VFAmQ4mNE3G8mWFnXkt7GnG8nv2MQ5mHPUu6VKxMg6"
+				"bzz-raw://15c527a32625d6d28abc2291b60a5b2bd9e518e5b34e557cbdaf5a4bd62a46a7",
+				"dweb:/ipfs/Qme3WbvE7Virh2WoMZeYDED1p4qBXMc38eGKMvXYRJDiYm"
 			]
 		}
 	},

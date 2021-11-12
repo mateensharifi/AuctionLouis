@@ -36,14 +36,12 @@ contract Auction {
     }
     
     function prepareAuction() public validAddress(creator) {
-        	if (biddingDuration <= 48 && minimumBid > 0 && startingPrice > 0) {
+            require (biddingDuration <= 48 && minimumBid > 0 && startingPrice > 0, "At least one part of your auction is incorrect."); 
 			auctionReadyToBegin = true;
-		}
-// 		else {
-// 			 throw ("At least one part of your auction is incorrect.");
-// 		}
-		
-		
     }
     
+    
+    function sendNFTToBidder() public {
+        
+    }
 }
