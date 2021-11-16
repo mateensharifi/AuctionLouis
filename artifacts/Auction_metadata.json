@@ -12,6 +12,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "calculateAuctionFee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "prepareAuction",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -81,10 +94,10 @@
 	},
 	"sources": {
 		"Auction.sol": {
-			"keccak256": "0x1bd7f653e674588c58712495e9fa33748156e85719c022a3bf20949b7170a843",
+			"keccak256": "0x2e83bb642a8b498639f666a2d524a08800aefd6eda4445b839d69907d3f9f47b",
 			"urls": [
-				"bzz-raw://15c527a32625d6d28abc2291b60a5b2bd9e518e5b34e557cbdaf5a4bd62a46a7",
-				"dweb:/ipfs/Qme3WbvE7Virh2WoMZeYDED1p4qBXMc38eGKMvXYRJDiYm"
+				"bzz-raw://bec866824c051046a37241769654feec32e521058371825a715c6feb7c589f61",
+				"dweb:/ipfs/QmZdsd7thAuwyi1VPRxMVQvULUvamcdAZpzpYTG3AxEpKS"
 			]
 		}
 	},

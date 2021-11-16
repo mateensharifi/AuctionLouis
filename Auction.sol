@@ -40,6 +40,10 @@ contract Auction {
 			auctionReadyToBegin = true;
     }
     
+    function calculateAuctionFee() public returns (uint256) {
+        auctionFee = biddingDuration / finalPrice;
+        return auctionFee;
+    }
     
     function sendNFTToBidder() public {
         
