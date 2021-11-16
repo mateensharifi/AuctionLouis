@@ -50,9 +50,14 @@ contract Auction {
     }
     
     function storeBids(uint256 bid) public {
-        if (bid >= buyNowPrice) {
-            biddingDuration = 0;
-            currentPrice
+        require (bid >= currentPrice, "Bid is too low");
+        biddingDuration = 0;
+        currentPrice.push(bid);
+        finalPrice = currentPrice.peek();
+        iD.push("Username: " + user.getUsername() + "\n User ID: " + user.getUserID());
+        if (biddingDuration == 0 && finalPrice < minimumBid) {
+            finalPrice = 0;
         }
     }
+    
 }
