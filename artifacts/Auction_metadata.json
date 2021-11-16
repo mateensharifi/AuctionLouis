@@ -31,13 +31,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "sendNFTToBidder",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -61,6 +54,19 @@
 					}
 				],
 				"name": "setUpAuction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "bid",
+						"type": "uint256"
+					}
+				],
+				"name": "storeBids",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -94,10 +100,10 @@
 	},
 	"sources": {
 		"Auction.sol": {
-			"keccak256": "0x2e83bb642a8b498639f666a2d524a08800aefd6eda4445b839d69907d3f9f47b",
+			"keccak256": "0x09f7efa3f39238eaf919d6b3adff1962d6d81ba2241ad8461d6eb5dc9c9b8a03",
 			"urls": [
-				"bzz-raw://bec866824c051046a37241769654feec32e521058371825a715c6feb7c589f61",
-				"dweb:/ipfs/QmZdsd7thAuwyi1VPRxMVQvULUvamcdAZpzpYTG3AxEpKS"
+				"bzz-raw://9bc5f105d95af64cfdafd03281c900f143e555dd2e13c35e78e21704e239a368",
+				"dweb:/ipfs/QmWiAmHLii5pg7KjAkNxJWDLxbeNGmiNiBDUqcHi1wD8o9"
 			]
 		}
 	},

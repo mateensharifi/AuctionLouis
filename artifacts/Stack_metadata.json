@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "push",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "pop",
+				"outputs": [
+					{
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Stack.sol": "Stack"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Stack.sol": {
+			"keccak256": "0x2e077319c593326417f8fe8d832474359de5b3eed11edf9e1468dab59ec53651",
+			"urls": [
+				"bzzr://691eb85c1984a274d7ba2bd9dee6d63fbb80be8c8310be980930008a8887700e"
+			]
+		}
+	},
+	"version": 1
+}

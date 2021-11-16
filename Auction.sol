@@ -12,6 +12,8 @@ contract Auction {
     uint256 private maximumDurationHours;
     uint256 private sendToLouis;
     uint256 private finalPrice;
+    
+    
     address private creator;
     
     constructor() {
@@ -45,7 +47,10 @@ contract Auction {
         return auctionFee;
     }
     
-    function sendNFTToBidder() public {
-        
+    function storeBids(uint256 bid) public {
+        if (bid >= buyNowPrice) {
+            biddingDuration = 0;
+            currentPrice
+        }
     }
 }
