@@ -55,9 +55,9 @@
 	},
 	"sources": {
 		"Stack.sol": {
-			"keccak256": "0x2e077319c593326417f8fe8d832474359de5b3eed11edf9e1468dab59ec53651",
+			"keccak256": "0x5aa4c940312e90fcdec22cd47df1c65d46f69f5166c268d49db72dabb280bb46",
 			"urls": [
-				"bzzr://691eb85c1984a274d7ba2bd9dee6d63fbb80be8c8310be980930008a8887700e"
+				"bzzr://6736fbca01f6bd88d3a669bd329b151173372b8c943ead434cd3ab39733d4df5"
 			]
 		}
 	},

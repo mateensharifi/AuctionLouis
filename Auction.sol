@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity  >=0.8.9;
 
 import "./Stack.sol";
@@ -55,7 +56,7 @@ contract Auction {
         biddingDuration = 0;
         currentPrice.push(bid);
         finalPrice = currentPrice.peek();
-        iD.push("Username: " + user.getUsername() + "\n User ID: " + user.getUserID());
+        iD.push("Username: " + creator.getUsername() + "\n User ID: " + creator.getUserID());
         if (biddingDuration == 0 && finalPrice < minimumBid) {
             finalPrice = 0;
         }
