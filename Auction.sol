@@ -1,5 +1,7 @@
 pragma solidity  >=0.8.9;
 
+import "./Stack.sol";
+
 contract Auction {
     bool private auctionReadyToBegin;
     bool private hasImmediateBuying;
@@ -12,8 +14,8 @@ contract Auction {
     uint256 private maximumDurationHours;
     uint256 private sendToLouis;
     uint256 private finalPrice;
-    
-    
+    Stack private currentPrice;
+    Stack private iD;
     address private creator;
     
     constructor() {
