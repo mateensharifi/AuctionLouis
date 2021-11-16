@@ -1,6 +1,7 @@
 pragma solidity  >=0.8.9;
 
 import "./Stack.sol";
+import "./WinAuction.sol";
 
 contract Auction {
     bool private auctionReadyToBegin;
@@ -59,5 +60,4 @@ contract Auction {
             finalPrice = 0;
         }
     }
-    
 }
