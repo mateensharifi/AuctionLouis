@@ -14,11 +14,10 @@ contract Auction {
     uint256 public minimumBid;
     uint256 public auctionFee;
     uint256 public maximumDurationHours;
-    uint256 public sendToLouis;
-    uint256 public finalPrice;
-    Stack public currentPrice;
-    Stack public iD;
+    uint256 public finalPrice = 0;
+    uint256 public currentPrice = 0;
     address payable public seller;
+    address public topBidder = address(0);
     uint256 public nftId;
     IERC721 public nft;
      
