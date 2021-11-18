@@ -5,19 +5,19 @@ import "./Stack.sol";
 pragma solidity >=0.8.9;
 
 contract Auction {
-    bool private auctionReadyToBegin;
-    bool private hasImmediateBuying;
-    uint256 private buyNowPrice;
-    uint256 private buyNow;
-    uint256 private startingPrice;
-    uint256 private biddingDuration;
-    uint256 private minimumBid;
-    uint256 private auctionFee;
-    uint256 private maximumDurationHours;
-    uint256 private sendToLouis;
-    uint256 private finalPrice;
-    Stack private currentPrice;
-    Stack private iD;
+    bool public auctionReadyToBegin;
+    bool public hasImmediateBuying;
+    uint256 public buyNowPrice;
+    uint256 public buyNow;
+    uint256 public startingPrice;
+    uint256 public biddingDuration;
+    uint256 public minimumBid;
+    uint256 public auctionFee;
+    uint256 public maximumDurationHours;
+    uint256 public sendToLouis;
+    uint256 public finalPrice;
+    Stack public currentPrice;
+    Stack public iD;
     address payable public seller;
     uint256 public nftId;
     IERC721 public nft;
@@ -47,7 +47,7 @@ contract Auction {
     }
     
     function prepareAuction() public validAddress(seller) {
-            require (biddingDuration <= 48 && minimumBid > 0 && startingPrice > 0, "At least one part of your auction is incorrect."); 
+            require (minimumBid > 0 && startingPrice > 0, "At least one part of your auction is incorrect."); 
 			auctionReadyToBegin = true;
     }
     
@@ -58,12 +58,15 @@ contract Auction {
     
     function storeBids(uint256 bid) public {
         require (bid >= currentPrice.pop, "Bid is too low");
-        biddingDuration = 0;
-        currentPrice.push(bid);
-        finalPrice = currentPrice.pop();
-        iD.push("Username: " + creator.getUsername() + "\n User ID: " + creator.getUserID());
-        if (biddingDuration == 0 && finalPrice < minimumBid) {
-            finalPrice = 0;
+        // biddingDuration = 0;
+        // currentPrice.push(bid);
+        // finalPrice = currentPrice.pop();
+        // iD.push();
+        // if (biddingDuration == 0 && finalPrice < minimumBid) {
+        //     finalPrice = 0;
+        // }
+        if (bid == buyNowPrice) {
+            
         }
     }
 }
