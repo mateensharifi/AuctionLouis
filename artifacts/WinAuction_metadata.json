@@ -144,10 +144,11 @@
 			]
 		},
 		"WinAuction.sol": {
-			"keccak256": "0x1afe1077eced55254aed9748bb895f843e8e0cac80d9df801984ee3b413c960b",
+			"keccak256": "0x998ebb9106d5703d3e830ffb1f93a43efa22446f85ca059cc9c33120d9d36609",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://92a334cd1fd86fece5e106926364986e31eab674ce7e4e1b0fcd76835a85a3d8",
-				"dweb:/ipfs/QmaHkhiWETNf9D8cJqLhvxf6N27CHBPyYg2PmzJCaY33Cr"
+				"bzz-raw://5de2a456f87d313b1547300fab6ce39b6f789fd2460bd8d6a960f039af5245c5",
+				"dweb:/ipfs/QmRj7yyukP4fyDtPcavN6qpnMNYVFt62UhZFinf3FJQ1Ts"
 			]
 		}
 	},

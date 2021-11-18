@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity  >=0.8.9;
-
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "./Stack.sol";
-import "./WinAuction.sol";
+pragma solidity >=0.8.9;
 
 contract Auction {
     bool private auctionReadyToBegin;
@@ -18,10 +18,12 @@ contract Auction {
     uint256 private finalPrice;
     Stack private currentPrice;
     Stack private iD;
-    address private creator;
-    
+    address payable public seller;
+    uint256 public nftId;
+    IERC721 public nft;
+     
     constructor() {
-        creator = msg.sender;
+        seller = payable(msg.sender);
     }
     
     modifier validAddress(address _addr) {
@@ -29,19 +31,22 @@ contract Auction {
         _;
     }
     
-    function setUpAuction (uint256 time, uint256 minBid, bool hasBuyNow, uint256 buyNow) public validAddress(creator) isSeller(creator) {
+    function setUpAuction (uint256 time, uint256 minBid, bool hasBuyNow, uint256 buyNow, address theNft, uint256 nftID) public validAddress(seller) isSeller(seller) {
+        require (startingPrice >0, "Auction must be longer");
         biddingDuration = time;
 		minimumBid = minBid;
 		hasImmediateBuying = hasBuyNow;
 		buyNowPrice = buyNow;
+		nft = IERC721(theNft);
+		nftId = nftID;
     }
     
     modifier isSeller(address _addr) {
-        require (_addr==creator);
+        require (_addr==seller);
         _;
     }
     
-    function prepareAuction() public validAddress(creator) {
+    function prepareAuction() public validAddress(seller) {
             require (biddingDuration <= 48 && minimumBid > 0 && startingPrice > 0, "At least one part of your auction is incorrect."); 
 			auctionReadyToBegin = true;
     }
@@ -52,10 +57,10 @@ contract Auction {
     }
     
     function storeBids(uint256 bid) public {
-        require (bid >= currentPrice, "Bid is too low");
+        require (bid >= currentPrice.pop, "Bid is too low");
         biddingDuration = 0;
         currentPrice.push(bid);
-        finalPrice = currentPrice.peek();
+        finalPrice = currentPrice.pop();
         iD.push("Username: " + creator.getUsername() + "\n User ID: " + creator.getUserID());
         if (biddingDuration == 0 && finalPrice < minimumBid) {
             finalPrice = 0;

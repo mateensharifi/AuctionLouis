@@ -1,52 +1,57 @@
 {
 	"compiler": {
-		"version": "0.4.26+commit.4563c3fc"
+		"version": "0.8.10+commit.fc410830"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"constant": false,
+				"inputs": [],
+				"name": "pop",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
+						"internalType": "bytes",
 						"name": "data",
 						"type": "bytes"
 					}
 				],
 				"name": "push",
 				"outputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"constant": false,
-				"inputs": [],
-				"name": "pop",
-				"outputs": [
-					{
-						"name": "data",
-						"type": "bytes"
-					}
-				],
-				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
 		"devdoc": {
-			"methods": {}
+			"kind": "dev",
+			"methods": {},
+			"version": 1
 		},
 		"userdoc": {
-			"methods": {}
+			"kind": "user",
+			"methods": {},
+			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
 			"Stack.sol": "Stack"
 		},
-		"evmVersion": "byzantium",
+		"evmVersion": "london",
 		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
 		"optimizer": {
 			"enabled": false,
 			"runs": 200
@@ -55,9 +60,11 @@
 	},
 	"sources": {
 		"Stack.sol": {
-			"keccak256": "0x5aa4c940312e90fcdec22cd47df1c65d46f69f5166c268d49db72dabb280bb46",
+			"keccak256": "0x11b1767fbad13858a7deebb1bb081b929cc06393cfdc68c5d78787986590da7d",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzzr://6736fbca01f6bd88d3a669bd329b151173372b8c943ead434cd3ab39733d4df5"
+				"bzz-raw://089e8c48db5e6af501aa549d293b9c8ac3f7dde37b472cdc79869b0eff44a7b9",
+				"dweb:/ipfs/QmQKy7MsySNKbm8b4X25LTAipH6hzZtixbEyED1xJtx48R"
 			]
 		}
 	},

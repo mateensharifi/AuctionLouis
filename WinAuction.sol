@@ -22,7 +22,7 @@ contract WinAuction {
     function win() external payable {
         winner = msg.sender;
         nft.safeTransferFrom(seller, msg.sender, nftId);
-        seller.transfer(msg.value);
+        //seller.transfer(msg.value);
 
         emit Win(msg.sender, msg.value);
     }
