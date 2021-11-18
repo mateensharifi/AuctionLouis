@@ -57,18 +57,16 @@ contract Auction {
     }
     
     function storeBids(uint256 bid) public {
-        require (bid >= currentPrice.pop, "Bid is too low");
-        // biddingDuration = 0;
-        // currentPrice.push(bid);
-        // finalPrice = currentPrice.pop();
-        // iD.push();
-        // if (biddingDuration == 0 && finalPrice < minimumBid) {
-        //     finalPrice = 0;
-        // }
+        require (bid >= currentPrice, "Bid is too low");
         if (bid == buyNowPrice) {
             biddingDuration = 0;
-            currentPrice.push(bid);
-            finalPrice = currentPrice.pop();
+            currentPrice = bid;
+            finalPrice = bid;
+        }
+        else {
+            currentPrice = bid;
         }
     }
+    
+    
 }
