@@ -8,7 +8,6 @@ contract Auction {
     bool public hasImmediateBuying;
     uint256 public buyNowPrice;
     uint256 public buyNow;
-    uint256 public startingPrice;
     uint256 public biddingDuration;
     uint256 public minimumBid;
     uint256 public auctionFee;
@@ -32,7 +31,7 @@ contract Auction {
     }
     
     function setUpAuction (uint256 time, uint256 minBid, bool hasBuyNow, uint256 buyNow, address theNft, uint256 nftID) external validAddress(seller) isSeller(seller)  {
-        require (startingPrice >0, "Auction must be longer");
+        require (minBid > 0, "Auction must be longer");
         biddingDuration = time;
 		minimumBid = minBid;
 		hasImmediateBuying = hasBuyNow;
@@ -47,7 +46,7 @@ contract Auction {
     }
     
     function prepareAuction() public validAddress(seller) {
-            require (minimumBid > 0 && startingPrice > 0, "At least one part of your auction is incorrect."); 
+            require (minimumBid > 0 && minimumBid > 0, "At least one part of your auction is incorrect."); 
 			auctionReadyToBegin = true;
     }
     

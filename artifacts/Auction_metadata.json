@@ -257,19 +257,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "startingPrice",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -419,11 +406,11 @@
 			]
 		},
 		"Auction.sol": {
-			"keccak256": "0x134ef25b0ea1cef6c9b049dee31a64fdbfd095666a03be486b731a4ffe15ae9b",
+			"keccak256": "0x69c7bb5bbbd75e51c0968a5e82c8f5faae79f39aedd8d71260c2baf14ebbea5c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://183f526c0dcd4081e1c5c7612efd6cc06b701e98b31613c558caacf50063e12b",
-				"dweb:/ipfs/QmT9tNZEgQ2cZHXgdxzUXjXCkSUVtDSjnP3MxMbn6yb9Rb"
+				"bzz-raw://c87d5f3809fabe389bee9863845089197dea317e7e237f64678e72b82b71ea72",
+				"dweb:/ipfs/QmSsjptzbUifz3nkZeMQF8BhSs3aL6WtQrQ6TU96riEAgn"
 			]
 		}
 	},
