@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
-import "./Stack.sol";
 pragma solidity >=0.8.9;
 
 contract Auction {
@@ -20,6 +19,8 @@ contract Auction {
     address public topBidder = address(0);
     uint256 public nftId;
     IERC721 public nft;
+    
+    event Win(address winner, uint256 price);
      
     constructor() {
         seller = payable(msg.sender);
@@ -30,7 +31,7 @@ contract Auction {
         _;
     }
     
-    function setUpAuction (uint256 time, uint256 minBid, bool hasBuyNow, uint256 buyNow, address theNft, uint256 nftID) public validAddress(seller) isSeller(seller) {
+    function setUpAuction (uint256 time, uint256 minBid, bool hasBuyNow, uint256 buyNow, address theNft, uint256 nftID) external validAddress(seller) isSeller(seller)  {
         require (startingPrice >0, "Auction must be longer");
         biddingDuration = time;
 		minimumBid = minBid;
@@ -65,6 +66,14 @@ contract Auction {
         else {
             currentPrice = bid;
         }
+        topBidder = msg.sender;
+    }
+    
+    function win() external payable {
+        if (topBidder != address(0)) {
+            nft.safeTransferFrom(address(this), topBidder, nftId);
+        } 
+        emit Win(topBidder, currentPrice);
     }
     
     
