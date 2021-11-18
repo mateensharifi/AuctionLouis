@@ -66,7 +66,9 @@ contract Auction {
         //     finalPrice = 0;
         // }
         if (bid == buyNowPrice) {
-            
+            biddingDuration = 0;
+            currentPrice.push(bid);
+            finalPrice = currentPrice.pop();
         }
     }
 }

@@ -7,7 +7,7 @@ contract Stack {
         stack.push(data);
     }
 
-    function pop() public returns (bytes memory data) {
-        data = stack[stack.length - 1];
+    function peek() public returns (bytes memory data) {
+       return stack[0];
     }
 }
