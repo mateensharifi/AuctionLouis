@@ -286,7 +286,7 @@
 				"inputs": [],
 				"name": "win",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -406,11 +406,11 @@
 			]
 		},
 		"Auction.sol": {
-			"keccak256": "0x69c7bb5bbbd75e51c0968a5e82c8f5faae79f39aedd8d71260c2baf14ebbea5c",
+			"keccak256": "0x9b82c0a5a004c40fe60ecb481687e89c5fcdc06acd502d57a27f32950a820efa",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c87d5f3809fabe389bee9863845089197dea317e7e237f64678e72b82b71ea72",
-				"dweb:/ipfs/QmSsjptzbUifz3nkZeMQF8BhSs3aL6WtQrQ6TU96riEAgn"
+				"bzz-raw://00fbd485f4e9a2de0ea4cecbd3766c1dedc988deba8d5e0bda4f7399f0d4d78f",
+				"dweb:/ipfs/QmXvkRN73YBND9frFMMzU84MZ3PtDyAaMQZ8XYafdoJRJb"
 			]
 		}
 	},

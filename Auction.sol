@@ -68,9 +68,9 @@ contract Auction {
         topBidder = msg.sender;
     }
     
-    function win() external payable {
+    function win() external {
         if (topBidder != address(0)) {
-            nft.safeTransferFrom(address(this), topBidder, nftId);
+            nft.transferFrom(address(this), topBidder, nftId);
         } 
         emit Win(topBidder, currentPrice);
     }
